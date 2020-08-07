@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--Image et css-->
-    <link rel="shortcut icon" type="image/png" href="img/favicon.jpg">
+    <script src="https://kit.fontawesome.com/1ea685ee96.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
+
+
 
     <!-- titre du document -->
     <title>Orinobear par Orinoco</title>
@@ -44,31 +46,48 @@
 </head>
 
 <body>
+
     <!-- Entete -->
-    <header class="header">
-        <div>
-            <a href="index.html">Orinobear by <img src="" class=""></a>
+    <header class="header_structure">
 
-            <nav>
-                <ul>
-                    <li>Accueil</li>
-                    <li>Le catalogue</li>
-                    <li>Mon panier</li>
-                </ul>
-            </nav>
+        <nav class="navbar">
 
-        </div>
+            <p class="nav_logo">
+                <a href="index.html " class="absvisiolien ">
+                    <span class="header_police">Orinobear</span> by
+                    <img src="images/orinoco-entier.png" class="header_orinoco ">
+                </a>
+            </p>
+
+            <span class="navbar_toggle" id="js-navbar-toggle">
+                 <i class="fas fa-bars nav_burger" ></i>
+            </span>
+
+            <ul class="main_nav" id="js-menu">
+                <li>
+                    <a href="index.html" class="nav_link absvisiolien nav_active"> <i class="fas fa-home"></i> Accueil</a>
+                </li>
+                <li>
+                    <a href="Mon-pannier.html" class="nav_link absvisiolien "> <i class="fas fa-shopping-basket"></i> Panier</a>
+                </li>
+            </ul>
+
+        </nav>
+
     </header>
 
-    <main>
-        <h1>Bienvenue sur Orinobear par Orinoco</h1>
+    <!--catalogue des ours en peluches-->
+    <main class="main_structure">
+        <h1>Welcome to Orinobear by Orinoco</h1>
         <h2> Nos ours en peluche "fait main"</h2>
-        <section>liste des différents ours</section>
+        <section>liste des différents ours
+
+        </section>
     </main>
 
-    <footer>
+    <footer class="footer_structure ">
 
-        <section class="footer_info">A propos
+        <section class="footer_info ">A propos
             <ul>
                 <li>Qui somme nous</li>
                 <li>Notre concept</li>
@@ -76,7 +95,7 @@
             </ul>
         </section>
 
-        <section class="footer_info">Orinoco&vous
+        <section class="footer_info ">Orinoco&vous
             <ul>
                 <li>Livraisons et retours</li>
                 <li>Services et garanties</li>
@@ -84,7 +103,7 @@
                 <li>Mentions légales</li>
             </ul>
         </section>
-        <section class="footer_info"> Nous suivre
+        <section class="footer_info "> Nous suivre
             <ul>
                 <li>Facebook </li>
                 <li>Instagram</li>
@@ -93,5 +112,7 @@
         </section>
     </footer>
 </body>
+<!--Javascript-->
+<script type="text/javascript" src='main.js'></script>
 
 </html>
