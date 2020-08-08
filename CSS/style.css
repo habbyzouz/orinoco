@@ -1,3 +1,16 @@
+/* couleur
+
+rose foncé: hsl(276, 63%, 82%)
+rose pale: F5D8FA
+rose tres pale : #F6E8F1
+noire grisé: #2A1324
+violet : #A429FF
+orange foncé :#F48600
+orange claire : #F3BD88
+
+*/
+
+
 /*police*/
 
 @font-face {
@@ -27,6 +40,11 @@ p {
 .absvisiolien {
     text-decoration: none;
     color: #2A1324;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -95,18 +113,91 @@ p {
 
 /*main*/
 
-.main_structure {}
+.main_structure {
+    background-color: #F6E8F1;
+}
+
+.main_banniere {
+    background-image: url(../images/banniere.jpg);
+    background-color: #2A1324;
+    background-size: contain;
+    width: 100%;
+    height: 230px;
+}
+
+.main_banniere_welcome {
+    text-align: center;
+    width: 50%;
+    padding-left: 50%;
+    padding-top: 5%;
+    display: flex;
+}
+
+.banniere_police {
+    font-family: "belli";
+    font-size: 1rem;
+}
+
+.main_bloc2 {
+    text-align: center;
+    color: #A429FF;
+}
 
 
 /* footer*/
 
 .footer_structure {
     width: 100%;
-    height: 15vh;
-    background-color: #CE98F1;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    position: fixed;
-    bottom: 0px;
+    flex-direction: column;
+}
+
+.footer_liste {
+    list-style-type: none;
+}
+
+.footer_info {
+    padding-left: 10%;
+}
+
+.footer_bgc1 {
+    background-color: hsl(276, 63%, 82%)
+}
+
+
+/* ecran d'ordi */
+
+
+/* navbar*/
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+    .main_nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .main_nav li {
+        margin: 0;
+    }
+    .nav_link {
+        margin-left: 40px;
+    }
+    .nav_logo {
+        margin-top: 0;
+    }
+    .navbar_toggle {
+        display: none;
+    }
+    .nav_logo:hover,
+    .nav_link:hover {
+        color: rgba(255, 255, 255, 1);
+    }
 }
