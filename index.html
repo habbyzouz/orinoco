@@ -10,7 +10,9 @@
     <script src="https://kit.fontawesome.com/1ea685ee96.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
 
-    <script type="text/javascript" src='main.js'></script>
+    <!--JS-->
+    <script type="text/javascript" src='js/navbar.js'></script>
+    <script type="text/javascript" src="js/carrousel.js" async></script>
 
 
     <!-- titre du document -->
@@ -77,15 +79,34 @@
 
     </header>
 
-    <!--catalogue des ours en peluches-->
+    <!--main-->
     <main class="main_structure">
 
-        <div class="main_banniere">
-            <h1 class="main_banniere_welcome">Welcome <br>to <br> Orinobear <br>by<br> Orinoco</h1>
+        <!--carrousel-->
+        <div class="main_carrousel ">
+
+            <div class="main_carrousel_sliders">
+                <a href="orinoco.html"><img class="carrousel_active" src="images/slide1.jpg" alt="Découvrer nos autres applications par Orinico"></a>
+                <a href="orinotextil.html"><img src="images/slide2.jpg" alt="Présentation de Orinotextil by Orinoco"></a>
+                <a href="orinobook.html"><img src="images/slider3.jpg" alt="Présentation de Orinobook by Orinoco"></a>
+            </div>
+
+            <div class="main_carrousel_btn">
+                <div class="main_carrousel_btn_icon gauche">←</div>
+                <div class="main_carrousel_btn_icon droite">→</div>
+            </div>
+
         </div>
 
+
+
+        <!--banniere-->
+        <section class="main_banniere">
+            <h1 class="main_banniere_welcome">Welcome <br>to <br> Orinobear <br>by<br> Orinoco</h1>
+        </section>
+
         <div>
-            <h2 class="main_bloc2"> Découvrez nos ours en peluche "faits à la main"</h2>
+            <h2 class="main_bloc2"> Nos ours en peluche <br> "faits à la main"</h2>
         </div>
 
         <section>liste des différents ours
